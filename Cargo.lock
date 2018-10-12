@@ -1,0 +1,8 @@
+[[package]]
+name = "sonic-db"
+version = "0.1.0"
+
+[[package]]
+name = "sonic-scraper"
+version = "0.1.0"
+
