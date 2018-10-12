@@ -7,13 +7,12 @@
 //!
 //! [sonic]: https://github.com/sonic/
 
-/// A scraper accumilates information about songs
-///
-/// It's initialised over a set of files
-/// and then tries to read as much
-/// metadata from these files as possible.
-/// Each song is assigned a unique hash
-/// that is reproducible between runs.
-pub struct Scraper {
-
+/// Metadata that can be known about a song
+pub struct Metadata<'parsed> {
+    title: Option<&'parsed str>,
+    artist: Option<&'parsed str,
+    composer: Option<&'parsed str>,
+    album: Option<&'parsed str>,
+    genre: Option<&'parsed str>,
+    bpm: Option<u32>,
 }
